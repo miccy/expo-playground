@@ -1,5 +1,3 @@
-declare const module: any;
-
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
