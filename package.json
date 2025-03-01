@@ -1,0 +1,14 @@
+{
+  "name": "miccy-rn-expo-playground",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.8.4",
+  "private": true,
+  "main": "index.js",
+  "repository": "git@github.com:miccy/miccy-rn-expo-playground.git",
+  "author": "Miccy <code@miccy.dev>",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
