@@ -98,6 +98,8 @@
     "node": "^18.18.0 || >=20.0.0"
   },
   "eslintConfig": {
-    "extends": ["@miccy-rn-expo-playground/eslint-config"]
+    "extends": [
+      "@miccy-rn-expo-playground/eslint-config"
+    ]
   }
 }
