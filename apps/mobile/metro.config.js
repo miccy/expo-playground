@@ -1,9 +1,14 @@
 /* eslint-env node */
 // Learn more https://docs.expo.io/guides/customizing-metro
 const { getDefaultConfig } = require("expo/metro-config")
+const path = require("path");
+
+// Get monorepo root folder
+const monorepoRoot = path.resolve(projectRoot, "../..");
 
 /** @type {import('expo/metro-config').MetroConfig} */
-const config = getDefaultConfig(__dirname)
+const projectRoot = __dirname;
+const config = getDefaultConfig(projectRoot);
 
 config.transformer.getTransformOptions = async () => ({
   transform: {
@@ -15,6 +20,14 @@ config.transformer.getTransformOptions = async () => ({
     inlineRequires: true,
   },
 })
+
+// 1. Watch all files within the monorepo
+config.watchFolders = [monorepoRoot];
+// 2. Let Metro know where to resolve packages and in what order
+config.resolver.nodeModulesPaths = [
+  path.resolve(projectRoot, "node_modules"),
+  path.resolve(monorepoRoot, "node_modules"),
+];
 
 // This helps support certain popular third-party libraries
 // such as Firebase that use the extension cjs.
