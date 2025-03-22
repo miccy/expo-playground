@@ -26,6 +26,37 @@
     },
     "pre-build": {
       "dependsOn": ["^pre-build"]
+    },
+    "expo:start": {
+      "cache": false,
+      "persistent": true
+    },
+    "expo:web": {
+      "cache": false,
+      "persistent": true
+    },
+    "expo:prebuild": {},
+    "expo:doctor": {},
+    "expo:build": {
+      "dependsOn": ["^expo:prebuild"]
+    },
+    "build:ios:sim": {
+      "cache": false
+    },
+    "build:ios:dev": {
+      "cache": false
+    },
+    "build:ios:prod": {
+      "cache": false
+    },
+    "build:android:sim": {
+      "cache": false
+    },
+    "build:android:dev": {
+      "cache": false
+    },
+    "build:android:prod": {
+      "cache": false
     }
   }
 }

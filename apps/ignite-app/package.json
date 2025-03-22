@@ -23,9 +23,18 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "bundle:web": "npx expo export --platform web",
-    "serve:web": "npx serve dist",
-    "prebuild:clean": "npx expo prebuild --clean"
+    "bundle:web": "bunx expo export --platform web",
+    "serve:web": "bunx serve dist",
+    "prebuild:clean": "bunx expo prebuild --clean",
+    "doctor": "bunx expo-doctor@latest --verbose",
+    "type-check": "tsc --noEmit -p . --pretty",
+    "pre-build": "echo 'Preparing Ignite build'",
+    "clean": "rm -rf node_modules .turbo .expo dist",
+    "expo:start": "expo start --dev-client",
+    "expo:web": "expo start --web",
+    "expo:prebuild": "bunx expo prebuild --clean",
+    "expo:doctor": "bunx expo-doctor@latest --verbose",
+    "expo:build": "eas build"
   },
   "dependencies": {
     "@expo-google-fonts/space-grotesk": "^0.2.3",
@@ -90,7 +99,23 @@
     "reactotron-react-native-mmkv": "^0.2.8",
     "ts-jest": "^29.2.6",
     "ts-node": "^10.9.2",
-    "typescript": "~5.3.3"
+    "typescript": "~5.3.3",
+    "@types/bun": "latest"
+  },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "@expo/metro-runtime",
+          "date-fns",
+          "i18next",
+          "intl-pluralrules",
+          "mobx",
+          "mobx-react-lite",
+          "mobx-state-tree"
+        ]
+      }
+    }
   },
   "engines": {
     "node": "^18.18.0 || >=20.0.0"

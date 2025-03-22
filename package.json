@@ -13,21 +13,35 @@
     "lint": "turbo lint",
     "start": "turbo start",
     "type-check": "turbo type-check",
-    "clean": "turbo clean",
+    "clean": "rm -rf node_modules .turbo .expo dist",
+    "clean:deep": "turbo clean && rm -rf node_modules bun.lock **/node_modules **/.turbo **/.expo **/dist",
     "test": "turbo run test",
-    "test:watch": "turbo run test:watch"
+    "test:watch": "turbo run test:watch",
+    "expo:start": "turbo expo:start",
+    "expo:web": "turbo expo:web",
+    "expo:doctor": "turbo expo:doctor",
+    "expo:prebuild": "turbo expo:prebuild",
+    "expo:build:ios": "turbo expo:build --filter=ignite-app",
+    "expo:build:android": "turbo expo:build --filter=ignite-app",
+    "eas:build:ios:sim": "turbo run build:ios:sim --filter=ignite-app",
+    "eas:build:ios:dev": "turbo run build:ios:dev --filter=ignite-app",
+    "eas:build:ios:prod": "turbo run build:ios:prod --filter=ignite-app",
+    "eas:build:android:sim": "turbo run build:android:sim --filter=ignite-app",
+    "eas:build:android:dev": "turbo run build:android:dev --filter=ignite-app",
+    "eas:build:android:prod": "turbo run build:android:prod --filter=ignite-app"
   },
   "dependencies": {
     "@biomejs/biome": "^1.9.4",
-    "expo": "^52",
-    "react": "^19.0.0",
-    "react-native": "^0.78.0",
+    "expo": "~52.0.40",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-native": "0.76.7",
     "turbo": "^2.4.4"
   },
   "devDependencies": {
-    "@types/react": "^19.0.10",
+    "@types/react": "~18.3.19",
     "@types/react-native": "^0.73.0",
-    "typescript": "^5.8.2",
+    "typescript": "~5.3.3",
     "@types/bun": "latest"
   },
   "packageManager": "bun@1.2.5",
@@ -36,6 +50,6 @@
     "packages/*"
   ],
   "engines": {
-    "node": ">=18"
+    "node": "^18.18.0 || >=20.0.0"
   }
 }
