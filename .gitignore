@@ -19,7 +19,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Editor directories and files
-.vscode/
 .idea/
 *.sublime-workspace
 *.sublime-project
@@ -42,3 +41,6 @@ ios/
 *.backup
 *.orig
 *.rej 
+
+# Turborepo
+.turbo/

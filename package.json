@@ -1,23 +1,40 @@
 {
-  "name": "miccy-rn-expo-playground",
+  "name": "expo-playground",
   "version": "1.0.0",
-  "packageManager": "yarn@3.8.4",
   "private": true,
-  "main": "index.js",
-  "repository": "git@github.com:miccy/miccy-rn-expo-playground.git",
-  "author": "Miccy <code@miccy.dev>",
+  "repository": "git@github.com:miccy/expo-playground.git",
+  "author": "Miccy <support@miccy.dev>",
   "license": "MIT",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "pre-build": "turbo pre-build",
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "start": "turbo start",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch"
+  },
   "dependencies": {
     "react": "^19.0.0",
-    "react-native": "^0.78.0"
+    "react-native": "^0.78.0",
+    "expo": "^52"
   },
   "devDependencies": {
     "@types/react": "^19.0.10",
     "@types/react-native": "^0.73.0",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "@types/bun": "latest"
+  },
+  "packageManager": "bun@1.2.5",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=18"
   }
 }

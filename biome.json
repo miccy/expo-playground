@@ -1,0 +1,64 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
+  "assists": {
+    "actions": {
+      "source": {
+        "sortJsxProps": "on",
+        "useSortedKeys": "on"
+      }
+    },
+    "enabled": true
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "a11y": {
+        "all": true
+      },
+      "complexity": {
+        "all": true
+      },
+      "correctness": {
+        "all": true,
+        "noNodejsModules": "off",
+        "useImportExtensions": "off",
+        "noUndeclaredDependencies": "off"
+      },
+      "nursery": {
+        "useSortedClasses": "off"
+      },
+      "performance": {
+        "all": true
+      },
+      "security": {
+        "all": true
+      },
+      "style": {
+        "all": true,
+        "noDefaultExport": "off",
+        "noNamespaceImport": "info",
+        "useNamingConvention": "off"
+      },
+      "suspicious": {
+        "all": true,
+        "noConsole": "info",
+        "noConsoleLog": "info",
+        "noReactSpecificProps": "off"
+      }
+    }
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "files": {
+    "ignore": ["node_modules", "dist", "build", ".turbo"]
+  },
+  "vcs": {
+    "clientKind": "git",
+    "enabled": true
+  }
+}

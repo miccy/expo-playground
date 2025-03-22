@@ -1,0 +1,45 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "Expo Playground - Root"
+    },
+    {
+      "path": "../react-native-animated-components",
+      "name": "React Native Animated Components"
+    },
+    {
+      "path": "../cuicui",
+      "name": "CuiCui"
+    }
+  ],
+  "settings": {
+    "editor.tokenColorCustomizations": {
+      "[*Light*]": {
+        "textMateRules": [
+          {
+            "scope": "ref.matchtext",
+            "settings": {
+              "foreground": "#000"
+            }
+          }
+        ]
+      },
+      "[*Dark*]": {
+        "textMateRules": [
+          {
+            "scope": "ref.matchtext",
+            "settings": {
+              "foreground": "#fff"
+            }
+          }
+        ]
+      }
+    },
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "workbench.preferredHighContrastColorTheme": "Visual Studio Dark",
+    "workbench.preferredHighContrastLightColorTheme": "Visual Studio Dark",
+    "workbench.preferredLightColorTheme": "Visual Studio Dark"
+  }
+}
