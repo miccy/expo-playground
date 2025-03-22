@@ -3,15 +3,11 @@
     {
       "path": ".",
       "name": "Expo Playground - Root"
-    },
+    } /* ,
     {
       "path": "../react-native-animated-components",
       "name": "React Native Animated Components"
-    },
-    {
-      "path": "../cuicui",
-      "name": "CuiCui"
-    }
+    } */
   ],
   "settings": {
     "editor.tokenColorCustomizations": {

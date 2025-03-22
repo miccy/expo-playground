@@ -5,7 +5,6 @@
   "repository": "git@github.com:miccy/expo-playground.git",
   "author": "Miccy <support@miccy.dev>",
   "license": "MIT",
-  "module": "index.ts",
   "type": "module",
   "scripts": {
     "pre-build": "turbo pre-build",
