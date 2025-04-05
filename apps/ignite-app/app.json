@@ -29,7 +29,10 @@
     "ios": {
       "icon": "./assets/images/app-icon-ios.png",
       "supportsTablet": true,
-      "bundleIdentifier": "dev.miccy.ignite"
+      "bundleIdentifier": "dev.miccy.ignite",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "web": {
       "favicon": "./assets/images/app-icon-web-favicon.png",
@@ -50,9 +53,14 @@
     ],
     "experiments": {
       "tsconfigPaths": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "25fb60cd-e90e-42b2-bec5-1faf7816e90e"
+      }
     }
   },
   "ignite": {
-    "version": "10.1.9"
+    "version": "10.2.0"
   }
 }

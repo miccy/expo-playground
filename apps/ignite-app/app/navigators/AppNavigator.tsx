@@ -88,7 +88,8 @@ const AppStack = observer(function AppStack() {
   )
 })
 
-export interface NavigationProps extends Partial<ComponentProps<typeof NavigationContainer>> {}
+export interface NavigationProps
+  extends Partial<ComponentProps<typeof NavigationContainer<AppStackParamList>>> {}
 
 export const AppNavigator = observer(function AppNavigator(props: NavigationProps) {
   const { themeScheme, navigationTheme, setThemeContextOverride, ThemeProvider } =
