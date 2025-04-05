@@ -1,8 +1,6 @@
 {
-  "name": "ignite-app",
-  "displayName": "ignite-app",
   "expo": {
-    "name": "ignite-app",
+    "name": "Ignite Playground",
     "slug": "ignite-app",
     "scheme": "ignite-app",
     "version": "1.0.0",
@@ -14,9 +12,7 @@
     },
     "newArchEnabled": true,
     "jsEngine": "hermes",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "android": {
       "icon": "./assets/images/app-icon-android-legacy.png",
       "package": "dev.miccy.ignite",

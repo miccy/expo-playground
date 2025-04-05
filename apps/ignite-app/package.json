@@ -94,5 +94,20 @@
   },
   "engines": {
     "node": "^18.18.0 || >=20.0.0"
+  },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "enlistUnknownPackages": false,
+        "exclude": [
+          "i18next",
+          "@expo/metro-runtime",
+          "intl-pluralrules",
+          "mobx",
+          "mobx-react-lite",
+          "mobx-state-tree"
+        ]
+      }
+    }
   }
 }
